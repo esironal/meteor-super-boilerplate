@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{pathFor 'landing'}}">Meteor CRUD Boilerplate</a>
+                <a class="navbar-brand" href="{{pathFor 'landing'}}">Meteor Super Boilerplate</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -18,8 +18,13 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{pathFor 'signIn'}}">Sign In</a></li>
-                    <li><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
+                    {{# if currentUser}}
+                        <li><a href="{{pathFor 'signIn'}}">Profile</a></li>
+                        <li><a id="logout" href="">Logout</a></li>
+                    {{else}}
+                        <li><a href="{{pathFor 'signIn'}}">Sign In</a></li>
+                        <li><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
+                    {{/if}}
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
