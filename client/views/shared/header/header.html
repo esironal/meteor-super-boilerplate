@@ -1,0 +1,7 @@
+<template name="header">
+    {{#if currentUser}}
+        {{>userHeader}}
+    {{else}}
+        {{> guestHeader}}
+    {{/if}}
+</template>

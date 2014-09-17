@@ -1,3 +1,30 @@
 <template name="profile">
-    <h1>Update Profile</h1>
+    <div class="authentication">
+        <div class="jumbotron">
+            <div class="container">
+
+                <div class="row">
+
+                    <form id="updateProfile" class="">
+                        <fieldset> 
+                            <div class="form-group">
+                                <input class="form-control" placeholder="First Name" type="text" name="first_name" id="firstNname" value="{{firstName}}" />
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Last Name" type="text" name="last_name" id="lastName" value="{{lastName}}"/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Company" type="text" name="company" id="company" value="{{company}}"/>
+                            </div>
+                            <button id="saveProfile" class="btn btn-primary">Save</button>
+                            <button id="cancel" class="btn btn-default">Cancel</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </template>

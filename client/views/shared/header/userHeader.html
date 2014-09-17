@@ -1,0 +1,43 @@
+<template name="userHeader">
+
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{pathFor 'dashboard'}}">Meteor Super Boilerplate</a>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+                    {{# if currentUser}}
+                        <li class="active"><a href="#">About</a></li>
+                    {{else}}
+
+                        <li class="active"><a href="#">Not About</a></li>
+                    {{/if}}
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    {{# if currentUser}}
+                        <li><a href="{{pathFor 'profile'}}">Profile</a></li>
+                        <li><a id="logout" href="">Logout</a></li>
+                    {{else}}
+                        <li><a href="{{pathFor 'signIn'}}">Sign In</a></li>
+                        <li><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
+                    {{/if}}
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <!--<div class="sidebar">-->
+        <!--{{> sidebar}}-->
+    <!--</div>-->
+
+</template>

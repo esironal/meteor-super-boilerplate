@@ -19,8 +19,8 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{# if currentUser}}
-                        <li><a href="{{pathFor 'signIn'}}">Profile</a></li>
-                        <li><a id="logout" href="">Logout</a></li>
+                        <li><a href="{{pathFor 'profile'}}">Profile</a></li>
+                        <li><a id="logout" href="#">Logout</a></li>
                     {{else}}
                         <li><a href="{{pathFor 'signIn'}}">Sign In</a></li>
                         <li><a href="{{pathFor 'signUp'}}">Sign Up</a></li>
