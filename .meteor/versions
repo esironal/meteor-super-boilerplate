@@ -1,9 +1,8 @@
 accounts-base@1.1.0
 accounts-password@1.0.1
-alanning:package-stubber@0.0.9
 alanning:roles@1.2.13
-amplify@1.0.0
 application-configuration@1.0.2
+autopublish@1.0.0
 autoupdate@1.1.0
 base64@1.0.0
 binary-heap@1.0.0
@@ -38,13 +37,12 @@ localstorage@1.0.0
 logging@1.0.3
 meteor-platform@1.1.0
 meteor@1.1.0
+miguelvalverde:font-awesome-4.1.0@0.0.1
 minifiers@1.1.0
 minimongo@1.0.3
 mizzao:bootstrap-3@3.2.0
 mobile-status-bar@1.0.0
 mongo@1.0.5
-mrt:mocha-web-velocity@0.3.4
-natestrauser:font-awesome@4.2.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.2
 ordered-dict@1.0.0
@@ -55,7 +53,6 @@ reactive-var@1.0.1
 reload@1.1.0
 retry@1.0.0
 routepolicy@1.0.1
-sanjo:jasmine@0.1.17
 sergeyt:d3@3.4.1
 service-configuration@1.0.1
 session@1.0.1
@@ -68,8 +65,5 @@ tracker@1.0.2
 ui@1.0.2
 underscore@1.0.0
 url@1.0.0
-velocity:html-reporter@0.1.5
 webapp-hashing@1.0.0
 webapp@1.1.1
-xolvio:jasmine-unit@0.1.24
-xolvio:velocity@0.1.18

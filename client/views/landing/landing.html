@@ -1,5 +1,26 @@
 <template name="landing">
     <div class="container">
         <h1>landing</h1>
+        <div class="jumbotron">
+            <h3>Test User</h3>
+            <ul>
+                <li>Email: test@gmail.com</li>
+                <li>Passwrod: test</li>
+            </ul>
+        </div>
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Emails</th>
+                <th>Roles</th>
+            </thead>
+            <tbody>
+            {{#each users}}
+                <tr>
+                    <td>{{profile.name}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
     </div>
 </template>

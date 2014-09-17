@@ -14,6 +14,11 @@ Template.signIn.events(
                     message: 'Email or password is incorrect'
                 Notifications.insert errorMessage
                 return
-            console.log "Signed in successfully"
+            console.log "Signed In Successfully"
+            successMessage =
+                type: "Success"
+                class: "success"
+                message: 'Successfully signed in user'
+            Notifications.insert successMessage
             Router.go 'dashboard'
 )

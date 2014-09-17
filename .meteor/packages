@@ -7,14 +7,10 @@ meteor-platform
 coffeescript
 less
 mizzao:bootstrap-3
-natestrauser:font-awesome
 accounts-password
 alanning:roles
 iron:router
 peernohell:c3
-xolvio:velocity
-xolvio:jasmine-unit
-mrt:mocha-web-velocity
-velocity:html-reporter
-sanjo:jasmine
+miguelvalverde:font-awesome-4.1.0
+autopublish
 
